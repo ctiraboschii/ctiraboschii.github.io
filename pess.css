@@ -1,0 +1,117 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+    background: #f4f6fc;
+    color: #0d1b4c;
+}
+
+.hero {
+    height: 45vh;
+    background: url('pessbg.png') center top no-repeat; 
+    background-size: 100%; 
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end; 
+    align-items: center;
+    text-align: center;
+    padding: 20px;
+}
+
+.hero-logo {
+    position: absolute;
+    top: 25px;
+    right: 25px;
+    width: 70px;
+    z-index: 2;
+}
+
+.hero-text {
+    background: rgb(148, 179, 217);
+    padding: 20px 30px;
+    border-radius: 12px;
+    z-index: 1;
+}
+
+.hero-text h1 {
+    font-size: 36px;
+    font-weight: 700;
+    margin-bottom: 10px;
+    color: #0d1b4c;
+}
+
+.hero-text p {
+    font-size: 16px;
+    color: #0d1b4c;
+}
+
+.departments {
+    text-align: center;
+    margin: 50px auto;
+}
+
+.departments h2 {
+    font-size: 28px;
+    font-weight: 700;
+    margin-bottom: 30px;
+}
+
+.dept-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+    gap: 20px;
+    width: 80%;
+    max-width: 1000px;
+    margin: 0 auto;
+}
+
+.dept-card {
+    background: white;
+    padding: 20px;
+    border-radius: 12px;
+    font-size: 18px;
+    font-weight: 600;
+    text-align: center;
+    color: #0d1b4c;
+    cursor: pointer;
+    transition: .25s ease;
+    box-shadow: 0 3px 10px rgba(0,0,0,0.08);
+}
+
+.dept-card:hover {
+    transform: translateY(-5px);
+    background: #e8f0ff;
+}
+
+.footer {
+    background: #0d1b4c;
+    color: white;
+    text-align: center;
+    padding: 20px 10px;
+    margin-top: 50px;
+    font-size: 14px;
+}
+
+.footer a {
+    color: #b9d3ff;
+    text-decoration: none;
+}
+
+.footer a:hover {
+    text-decoration: underline;
+}
+
+@media (max-width: 768px) {
+    .hero-text h1 {
+        font-size: 28px;
+    }
+    .hero-text p {
+        font-size: 14px;
+    }
+}
+

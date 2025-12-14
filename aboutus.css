@@ -1,0 +1,90 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+    color: #0d1b4c;
+}
+
+.hero {
+    height: 40vh;
+    background-color: rgb(17, 17, 234);
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding: 20px;
+}
+
+.hero::after {
+    content: "";
+    position: absolute;
+    inset: 0;
+    background: rgba(0, 20, 60, 0.45);
+}
+
+.hero-logo {
+    position: absolute;
+    top: 25px;
+    right: 25px;
+    width: 70px;
+    z-index: 3;
+}
+
+.hero-text {
+    color: white;
+    z-index: 2;
+}
+
+.hero-text h1 {
+    font-size: 42px;
+    font-weight: 700;
+    margin-bottom: 5px;
+}
+
+.hero-text p {
+    font-size: 18px;
+    opacity: 0.9;
+}
+
+.about-section {
+    background-image: url("aboutusbg.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    padding: 40px 20px;
+    border-radius: 12px;
+    width: 90%;
+    max-width: 900px;
+    margin: 60px auto;
+    text-align: center;
+}
+
+.about-section h2 {
+    font-size: 32px;
+    font-weight: 700;
+    margin-bottom: 25px;
+}
+
+.about-section p {
+    font-size: 18px;
+    line-height: 1.7;
+    margin-bottom: 20px;
+}
+
+.footer {
+    background: #0d1b4c;
+    color: white;
+    text-align: center;
+    padding: 20px 10px;
+    margin-top: 60px;
+    font-size: 14px;
+}
+
+.footer a {
+    color: #b9d3ff;
+}
